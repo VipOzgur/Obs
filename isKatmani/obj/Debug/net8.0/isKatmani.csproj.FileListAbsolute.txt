@@ -1,0 +1,12 @@
+D:\etc\isKatmani\bin\Debug\net8.0\isKatmani.deps.json
+D:\etc\isKatmani\bin\Debug\net8.0\isKatmani.dll
+D:\etc\isKatmani\bin\Debug\net8.0\isKatmani.pdb
+D:\etc\isKatmani\obj\Debug\net8.0\isKatmani.csproj.AssemblyReference.cache
+D:\etc\isKatmani\obj\Debug\net8.0\isKatmani.GeneratedMSBuildEditorConfig.editorconfig
+D:\etc\isKatmani\obj\Debug\net8.0\isKatmani.AssemblyInfoInputs.cache
+D:\etc\isKatmani\obj\Debug\net8.0\isKatmani.AssemblyInfo.cs
+D:\etc\isKatmani\obj\Debug\net8.0\isKatmani.csproj.CoreCompileInputs.cache
+D:\etc\isKatmani\obj\Debug\net8.0\isKatmani.dll
+D:\etc\isKatmani\obj\Debug\net8.0\refint\isKatmani.dll
+D:\etc\isKatmani\obj\Debug\net8.0\isKatmani.pdb
+D:\etc\isKatmani\obj\Debug\net8.0\ref\isKatmani.dll

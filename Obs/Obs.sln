@@ -1,0 +1,33 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Obs", "Obs.csproj", "{A0E47E03-898C-4210-9296-A2F9034A2786}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "isKatmani", "..\isKatmani\isKatmani.csproj", "{AA838305-0DBE-4764-AB3D-F2285961A8AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObsApi", "..\ObsApi\ObsApi.csproj", "{70CF4A83-90ED-4F43-BD2E-0A498383016E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A0E47E03-898C-4210-9296-A2F9034A2786}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0E47E03-898C-4210-9296-A2F9034A2786}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0E47E03-898C-4210-9296-A2F9034A2786}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0E47E03-898C-4210-9296-A2F9034A2786}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA838305-0DBE-4764-AB3D-F2285961A8AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA838305-0DBE-4764-AB3D-F2285961A8AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA838305-0DBE-4764-AB3D-F2285961A8AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA838305-0DBE-4764-AB3D-F2285961A8AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70CF4A83-90ED-4F43-BD2E-0A498383016E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70CF4A83-90ED-4F43-BD2E-0A498383016E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70CF4A83-90ED-4F43-BD2E-0A498383016E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70CF4A83-90ED-4F43-BD2E-0A498383016E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
