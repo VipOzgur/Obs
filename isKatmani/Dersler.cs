@@ -26,7 +26,7 @@ namespace isKatmani
         public int akts { get { return this._akts; } set { this._akts = value; } }
         public int donem{ get { return this._donem; } set { this._donem= value; } }
         public int personelId{ get { return this._personelId; } set { this._personelId= value; } }
-        public int sinifId{ get { return this._sinifId; } set { this._sinifId= value; } }
+        public int sinifId { get; set; }
 
 
     }

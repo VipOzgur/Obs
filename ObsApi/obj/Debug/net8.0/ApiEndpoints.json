@@ -1,5 +1,247 @@
 [
   {
+    "ContainingType": "ObsApi.Controllers.DepartmanIstatistikController",
+    "Method": "Get",
+    "RelativePath": "api/DepartmanIstatistik",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ObsApi.Controllers.DepartmansController",
+    "Method": "GetAll",
+    "RelativePath": "api/Departmans",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ObsApi.Controllers.DepartmansController",
+    "Method": "Add",
+    "RelativePath": "api/Departmans",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "d",
+        "Type": "isKatmani.Departmans",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ObsApi.Controllers.DepartmansController",
+    "Method": "Update",
+    "RelativePath": "api/Departmans",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "d",
+        "Type": "isKatmani.Departmans",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ObsApi.Controllers.DepartmansController",
+    "Method": "Delete",
+    "RelativePath": "api/Departmans/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ObsApi.Controllers.DerslerController",
+    "Method": "GetAll",
+    "RelativePath": "api/Dersler",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ObsApi.Controllers.DerslerController",
+    "Method": "Add",
+    "RelativePath": "api/Dersler",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "d",
+        "Type": "isKatmani.Dersler",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ObsApi.Controllers.DerslerController",
+    "Method": "Update",
+    "RelativePath": "api/Dersler",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "d",
+        "Type": "isKatmani.Dersler",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ObsApi.Controllers.DerslerController",
+    "Method": "Delete",
+    "RelativePath": "api/Dersler/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ObsApi.Controllers.FakultelerController",
+    "Method": "GetAll",
+    "RelativePath": "api/Fakulteler",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ObsApi.Controllers.FakultelerController",
+    "Method": "Add",
+    "RelativePath": "api/Fakulteler",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "f",
+        "Type": "isKatmani.Fakulteler",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ObsApi.Controllers.FakultelerController",
+    "Method": "Update",
+    "RelativePath": "api/Fakulteler",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "f",
+        "Type": "isKatmani.Fakulteler",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ObsApi.Controllers.FakultelerController",
+    "Method": "Delete",
+    "RelativePath": "api/Fakulteler/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ObsApi.Controllers.LogController",
+    "Method": "GetAll",
+    "RelativePath": "api/Log",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ObsApi.Controllers.LogController",
+    "Method": "Add",
+    "RelativePath": "api/Log",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "l",
+        "Type": "isKatmani.Log",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ObsApi.Controllers.LogController",
+    "Method": "Update",
+    "RelativePath": "api/Log",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "l",
+        "Type": "isKatmani.Log",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ObsApi.Controllers.LogController",
+    "Method": "Delete",
+    "RelativePath": "api/Log/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ObsApi.Controllers.OgrenciController",
     "Method": "GetAll",
     "RelativePath": "api/Ogrenci",
@@ -58,6 +300,90 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ObsApi.Controllers.OgrenciDersNotlari",
+    "Method": "Notlar",
+    "RelativePath": "api/OgrenciDersNotlari/notlar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ogrenciId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ObsApi.Controllers.PersonelController",
+    "Method": "GetAll",
+    "RelativePath": "api/Personel",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ObsApi.Controllers.PersonelController",
+    "Method": "Add",
+    "RelativePath": "api/Personel",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "p",
+        "Type": "isKatmani.Personel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ObsApi.Controllers.PersonelController",
+    "Method": "Update",
+    "RelativePath": "api/Personel",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "p",
+        "Type": "isKatmani.Personel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ObsApi.Controllers.PersonelController",
+    "Method": "Delete",
+    "RelativePath": "api/Personel/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ObsApi.Controllers.PersonelDetayController",
+    "Method": "GetAll",
+    "RelativePath": "api/PersonelDetay",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ObsApi.Controllers.RolesController",
     "Method": "GetAll",
     "RelativePath": "api/Roles",
@@ -103,6 +429,64 @@
     "ContainingType": "ObsApi.Controllers.RolesController",
     "Method": "Delete",
     "RelativePath": "api/Roles/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ObsApi.Controllers.SiniflarController",
+    "Method": "GetAll",
+    "RelativePath": "api/Siniflar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ObsApi.Controllers.SiniflarController",
+    "Method": "Add",
+    "RelativePath": "api/Siniflar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "s",
+        "Type": "isKatmani.Siniflar",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ObsApi.Controllers.SiniflarController",
+    "Method": "Update",
+    "RelativePath": "api/Siniflar",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "s",
+        "Type": "isKatmani.Siniflar",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ObsApi.Controllers.SiniflarController",
+    "Method": "Delete",
+    "RelativePath": "api/Siniflar/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,

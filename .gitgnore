@@ -1,0 +1,51 @@
+## [Visual Studio]
+## Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Re]leasePublic/
+x64/
+x86/
+[Aa]rm/
+[Aa]rm64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+## Visual Studio 2015/2017/2019/2022 cache and settings
+.vs/
+# Dosya bazlı kullanıcı ayarları
+*.user
+*.userosscache
+*.sln.docstates
+
+## User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## [NuGet]
+# NuGet paketleri klasörü (Genellikle bin içinde değilse)
+packages/
+# NuGet paket restore dosyaları
+*.nuget.props
+*.nuget.targets
+
+## [ASP.NET Core]
+# Geliştirme aşamasındaki geçici dosyalar
+ASPNETCORE_ENVIRONMENT
+appsettings.Development.json
+
+## [Testing]
+# Test sonuçları ve kapsama raporları
+TestResults/
+*.sequenced
+
+## [Publish]
+# Publish (Yayınlama) klasörleri
+bin/App.publish/
+*.publish.xml

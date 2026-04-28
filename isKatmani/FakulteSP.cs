@@ -6,15 +6,18 @@ using System.Data;
 public class FakulteSP
 {
     private ArrayList _liste;
-    string _listele = "sp_Fak_Listele", _ekle = "sp_Fak_Ekle";
-    string _sil = "sp_Fak_Sil", _guncelle = "sp_Fak_Guncelle";
+    string _listele = "sp_Fakulte_Listele", _ekle = "sp_Fakulte_Ekle";
+    string _sil = "sp_Fakulte_Sil", _guncelle = "sp_Fakulte_Guncelle";
 
     public FakulteSP()
     {
         _liste = new ArrayList();
         doldur();
     }
-
+    public ArrayList Liste()
+    {
+        return _liste;
+    }
     public void doldur()
     {
         SqlConnection conn = UtilConnection.getCon();
@@ -41,7 +44,7 @@ public class FakulteSP
         com.CommandType = CommandType.StoredProcedure;
 
         com.Parameters.AddWithValue("@Ad", f.ad);
-        com.Parameters.AddWithValue("@KurulusTarihi", f.kurulusTarihi);
+        com.Parameters.AddWithValue("@KurulusTarihi", f.kurulusTarihi.ToDateTime(TimeOnly.MinValue));
         com.Parameters.AddWithValue("@Adres", f.adres);
 
         com.ExecuteNonQuery();
@@ -56,7 +59,7 @@ public class FakulteSP
 
         com.Parameters.AddWithValue("@Id", f.Id);
         com.Parameters.AddWithValue("@Ad", f.ad);
-        com.Parameters.AddWithValue("@KurulusTarihi", f.kurulusTarihi);
+        com.Parameters.AddWithValue("@KurulusTarihi", f.kurulusTarihi.ToDateTime(TimeOnly.MinValue));
         com.Parameters.AddWithValue("@Adres", f.adres);
 
         com.ExecuteNonQuery();

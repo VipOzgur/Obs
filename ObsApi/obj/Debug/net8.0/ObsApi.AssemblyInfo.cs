@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ObsApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e2b751a37944acc610c2ea8fb0d35a25070ff9cb")]
 [assembly: System.Reflection.AssemblyProductAttribute("ObsApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ObsApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -16,7 +16,10 @@ namespace isKatmani
         string _procSil = "sp_Departman_Sil", _procGuncelle = "sp_Departman_Guncelle";
 
         public DepartmansSP() { this._liste = new ArrayList(); this.doldur(); }
-
+        public ArrayList Liste()
+        {
+            return _liste;
+        }
         public void ekle(Departmans d)
         {
             SqlConnection conn = UtilConnection.getCon();
@@ -24,7 +27,7 @@ namespace isKatmani
             com.CommandType = CommandType.StoredProcedure;
 
             com.Parameters.AddWithValue("@Ad", d.ad);
-            com.Parameters.AddWithValue("@RoleId", d.fakulteId);
+            com.Parameters.AddWithValue("@FakulteId", d.fakulteId);
 
             com.ExecuteNonQuery();
             conn.Close();

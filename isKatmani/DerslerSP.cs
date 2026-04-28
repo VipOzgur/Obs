@@ -74,7 +74,10 @@ namespace isKatmani
             com.ExecuteNonQuery();
             conn.Close();
         }
-
+        public ArrayList Liste()
+        {
+            return _liste;
+        }
         public void sil(int id)
         {
             SqlConnection conn = UtilConnection.getCon();

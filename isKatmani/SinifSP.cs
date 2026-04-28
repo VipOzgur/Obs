@@ -21,6 +21,10 @@ namespace isKatmani
             _liste = new ArrayList();
             doldur();
         }
+        public ArrayList Liste()
+        {
+            return _liste;
+        }
 
         public void doldur()
         {

@@ -12,8 +12,8 @@ namespace isKatmani
     public class PersonelSP
     {
         private ArrayList _liste;
-        string _listele = "sp_Per_Listele", _ekle = "sp_Per_Ekle";
-        string _sil = "sp_Per_Sil", _guncelle = "sp_Per_Guncelle";
+        string _listele = "sp_Personel_Listele", _ekle = "sp_Personel_Ekle";
+        string _sil = "sp_Personel_Sil", _guncelle = "sp_Personel_Guncelle";
 
         public PersonelSP()
         {
@@ -39,8 +39,8 @@ namespace isKatmani
                     reader["Ad"].ToString(),
                     reader["Soyad"].ToString(),
                     reader["Adres"].ToString(),
-                    Convert.ToInt32(reader["RoleId"]),
-                    Convert.ToInt32(reader["DepartmanId"])
+                    Convert.ToInt32((reader["RoleId"] as int?)??0),
+                    Convert.ToInt32((reader["DepartmantId"] as  int?)??0)
                 ));
             }
             conn.Close();
