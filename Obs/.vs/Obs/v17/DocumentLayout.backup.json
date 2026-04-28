@@ -1,41 +1,7 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\etc\\Obs\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{70CF4A83-90ED-4F43-BD2E-0A498383016E}|..\\ObsApi\\ObsApi.csproj|d:\\etc\\obsapi\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70CF4A83-90ED-4F43-BD2E-0A498383016E}|..\\ObsApi\\ObsApi.csproj|d:\\etc\\obsapi\\controllers\\ogrencicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA838305-0DBE-4764-AB3D-F2285961A8AA}|..\\isKatmani\\isKatmani.csproj|d:\\etc\\iskatmani\\departmanssp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA838305-0DBE-4764-AB3D-F2285961A8AA}|..\\isKatmani\\isKatmani.csproj|d:\\etc\\iskatmani\\departmans.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA838305-0DBE-4764-AB3D-F2285961A8AA}|..\\isKatmani\\isKatmani.csproj|d:\\etc\\iskatmani\\ogrencisp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA838305-0DBE-4764-AB3D-F2285961A8AA}|..\\isKatmani\\isKatmani.csproj|d:\\etc\\iskatmani\\rolessp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA838305-0DBE-4764-AB3D-F2285961A8AA}|..\\isKatmani\\isKatmani.csproj|d:\\etc\\iskatmani\\utilconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70CF4A83-90ED-4F43-BD2E-0A498383016E}|..\\ObsApi\\ObsApi.csproj|d:\\etc\\obsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70CF4A83-90ED-4F43-BD2E-0A498383016E}|..\\ObsApi\\ObsApi.csproj|d:\\etc\\obsapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA838305-0DBE-4764-AB3D-F2285961A8AA}|..\\isKatmani\\isKatmani.csproj|d:\\etc\\iskatmani\\personelsp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA838305-0DBE-4764-AB3D-F2285961A8AA}|..\\isKatmani\\isKatmani.csproj|d:\\etc\\iskatmani\\personel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "WorkspaceRootPath": "D:\\ozkanozgurobs\\obss\\Obs\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -43,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -56,149 +22,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DepartmansSp.cs",
-              "DocumentMoniker": "D:\\etc\\isKatmani\\DepartmansSp.cs",
-              "RelativeDocumentMoniker": "..\\isKatmani\\DepartmansSp.cs",
-              "ToolTip": "D:\\etc\\isKatmani\\DepartmansSp.cs",
-              "RelativeToolTip": "..\\isKatmani\\DepartmansSp.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-22T06:11:31.03Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Departmans.cs",
-              "DocumentMoniker": "D:\\etc\\isKatmani\\Departmans.cs",
-              "RelativeDocumentMoniker": "..\\isKatmani\\Departmans.cs",
-              "ToolTip": "D:\\etc\\isKatmani\\Departmans.cs",
-              "RelativeToolTip": "..\\isKatmani\\Departmans.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-22T06:11:25.538Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "OgrenciSP.cs",
-              "DocumentMoniker": "D:\\etc\\isKatmani\\OgrenciSP.cs",
-              "RelativeDocumentMoniker": "..\\isKatmani\\OgrenciSP.cs",
-              "ToolTip": "D:\\etc\\isKatmani\\OgrenciSP.cs",
-              "RelativeToolTip": "..\\isKatmani\\OgrenciSP.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAArwDoAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-22T00:57:47.512Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UtilConnection.cs",
-              "DocumentMoniker": "D:\\etc\\isKatmani\\UtilConnection.cs",
-              "RelativeDocumentMoniker": "..\\isKatmani\\UtilConnection.cs",
-              "ToolTip": "D:\\etc\\isKatmani\\UtilConnection.cs",
-              "RelativeToolTip": "..\\isKatmani\\UtilConnection.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAQwA8AAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-22T00:36:09.046Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\etc\\ObsApi\\Program.cs",
-              "RelativeDocumentMoniker": "..\\ObsApi\\Program.cs",
-              "ToolTip": "D:\\etc\\ObsApi\\Program.cs",
-              "RelativeToolTip": "..\\ObsApi\\Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABIAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-22T00:35:13.95Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RolesSP.cs",
-              "DocumentMoniker": "D:\\etc\\isKatmani\\RolesSP.cs",
-              "RelativeDocumentMoniker": "..\\isKatmani\\RolesSP.cs",
-              "ToolTip": "D:\\etc\\isKatmani\\RolesSP.cs",
-              "RelativeToolTip": "..\\isKatmani\\RolesSP.cs",
-              "ViewState": "AgIAAKwAAAAAAAAAAAAmwMEAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-22T00:18:39.432Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RolesController.cs",
-              "DocumentMoniker": "D:\\etc\\ObsApi\\Controllers\\RolesController.cs",
-              "RelativeDocumentMoniker": "..\\ObsApi\\Controllers\\RolesController.cs",
-              "ToolTip": "D:\\etc\\ObsApi\\Controllers\\RolesController.cs",
-              "RelativeToolTip": "..\\ObsApi\\Controllers\\RolesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-22T00:18:05.164Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "D:\\etc\\ObsApi\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "..\\ObsApi\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "D:\\etc\\ObsApi\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "..\\ObsApi\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-22T00:16:51.492Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "PersonelSP.cs",
-              "DocumentMoniker": "D:\\etc\\isKatmani\\PersonelSP.cs",
-              "RelativeDocumentMoniker": "..\\isKatmani\\PersonelSP.cs",
-              "ToolTip": "D:\\etc\\isKatmani\\PersonelSP.cs",
-              "RelativeToolTip": "..\\isKatmani\\PersonelSP.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-21T23:46:47.245Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Personel.cs",
-              "DocumentMoniker": "D:\\etc\\isKatmani\\Personel.cs",
-              "RelativeDocumentMoniker": "..\\isKatmani\\Personel.cs",
-              "ToolTip": "D:\\etc\\isKatmani\\Personel.cs",
-              "RelativeToolTip": "..\\isKatmani\\Personel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-21T23:46:43.175Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "OgrenciController.cs",
-              "DocumentMoniker": "D:\\etc\\ObsApi\\Controllers\\OgrenciController.cs",
-              "RelativeDocumentMoniker": "..\\ObsApi\\Controllers\\OgrenciController.cs",
-              "ToolTip": "D:\\etc\\ObsApi\\Controllers\\OgrenciController.cs",
-              "RelativeToolTip": "..\\ObsApi\\Controllers\\OgrenciController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-21T23:28:42.68Z",
-              "EditorCaption": ""
             }
           ]
         }
