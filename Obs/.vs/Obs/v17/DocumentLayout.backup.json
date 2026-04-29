@@ -1,7 +1,11 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\ozkanozgurobs\\obss\\Obs\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\etc\\obss\\Obs\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{70CF4A83-90ED-4F43-BD2E-0A498383016E}|..\\ObsApi\\ObsApi.csproj|d:\\etc\\obss\\obsapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +13,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +26,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\etc\\obss\\ObsApi\\appsettings.json",
+              "RelativeDocumentMoniker": "..\\ObsApi\\appsettings.json",
+              "ToolTip": "D:\\etc\\obss\\ObsApi\\appsettings.json",
+              "RelativeToolTip": "..\\ObsApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-28T11:22:55.068Z",
+              "EditorCaption": ""
             }
           ]
         }
