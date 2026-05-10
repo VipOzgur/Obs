@@ -19,21 +19,21 @@ namespace ApiLayer
             }
 
             // GET: Tüm personel listesini getirir
-            public async Task<List<PersonelSP>> GetAllAsync()
+            public async Task<List<Personel>> GetAllAsync()
             {
-                var response = await _httpClient.GetFromJsonAsync<List<PersonelSP>>(BaseRoute);
-                return response ?? new List<PersonelSP>();
+                var response = await _httpClient.GetFromJsonAsync<List<Personel>>(BaseRoute);
+                return response ?? new List<Personel>();
             }
 
             // POST: Yeni personel ekler
-            public async Task<string> AddAsync(PersonelSP personel)
+            public async Task<string> AddAsync(Personel personel)
             {
                 var response = await _httpClient.PostAsJsonAsync(BaseRoute, personel);
                 return await response.Content.ReadAsStringAsync(); // API'den gelen "Eklendi" mesajı
             }
 
             // PUT: Personel bilgilerini günceller
-            public async Task<string> UpdateAsync(PersonelSP personel)
+            public async Task<string> UpdateAsync(Personel personel)
             {
                 var response = await _httpClient.PutAsJsonAsync(BaseRoute, personel);
                 return await response.Content.ReadAsStringAsync(); // API'den gelen "Güncellendi" mesajı

@@ -65,6 +65,32 @@
             "rid": "win"
           }
         }
+      },
+      "ApiLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "isKatmani": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ApiLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ApiLayer.dll": {}
+        }
+      },
+      "isKatmani/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "System.Data.SqlClient": "4.9.1"
+        },
+        "compile": {
+          "bin/placeholder/isKatmani.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/isKatmani.dll": {}
+        }
       }
     }
   },
@@ -164,11 +190,23 @@
         "system.data.sqlclient.4.9.1.nupkg.sha512",
         "system.data.sqlclient.nuspec"
       ]
+    },
+    "ApiLayer/1.0.0": {
+      "type": "project",
+      "path": "../ApiLayer/ApiLayer.csproj",
+      "msbuildProject": "../ApiLayer/ApiLayer.csproj"
+    },
+    "isKatmani/1.0.0": {
+      "type": "project",
+      "path": "../isKatmani/isKatmani.csproj",
+      "msbuildProject": "../isKatmani/isKatmani.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "System.Data.SqlClient >= 4.9.1"
+      "ApiLayer >= 1.0.0",
+      "System.Data.SqlClient >= 4.9.1",
+      "isKatmani >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -202,7 +240,14 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\etc\\obss\\ApiLayer\\ApiLayer.csproj": {
+              "projectPath": "D:\\etc\\obss\\ApiLayer\\ApiLayer.csproj"
+            },
+            "D:\\etc\\obss\\isKatmani\\isKatmani.csproj": {
+              "projectPath": "D:\\etc\\obss\\isKatmani\\isKatmani.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

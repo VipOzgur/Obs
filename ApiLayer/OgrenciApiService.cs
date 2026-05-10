@@ -20,21 +20,21 @@ namespace ApiLayer
             }
 
             // GET: Tüm öğrencileri getirir
-            public async Task<List<OgrenciSP>> GetAllAsync()
+            public async Task<List<Ogrenci>> GetAllAsync()
             {
-                var response = await _httpClient.GetFromJsonAsync<List<OgrenciSP>>(BaseRoute);
-                return response ?? new List<OgrenciSP>();
+                var response = await _httpClient.GetFromJsonAsync<List<Ogrenci>>(BaseRoute);
+                return response ?? new List<Ogrenci>();
             }
 
             // POST: Yeni öğrenci ekler
-            public async Task<string> AddAsync(OgrenciSP ogrenci)
+            public async Task<string> AddAsync(Ogrenci ogrenci)
             {
                 var response = await _httpClient.PostAsJsonAsync(BaseRoute, ogrenci);
                 return await response.Content.ReadAsStringAsync(); // "Eklendi"
             }
 
             // PUT: Öğrenci bilgilerini günceller
-            public async Task<string> UpdateAsync(OgrenciSP ogrenci)
+            public async Task<string> UpdateAsync(Ogrenci ogrenci)
             {
                 var response = await _httpClient.PutAsJsonAsync(BaseRoute, ogrenci);
                 return await response.Content.ReadAsStringAsync(); // "Güncellendi"

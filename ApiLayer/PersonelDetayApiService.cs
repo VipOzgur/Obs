@@ -24,12 +24,12 @@ namespace ApiLayer
             /// <summary>
             /// Personel bilgilerini detaylı (muhtemelen Join işlemlerinden geçmiş) olarak getirir.
             /// </summary>
-            public async Task<List<PersonelDetayVMSP>> GetAllPersonelDetayAsync()
+            public async Task<List<PersonelDetayVM>> GetAllPersonelDetayAsync()
             {
                 // Controller'daki [HttpGet] metoduna istek atar
-                var response = await _httpClient.GetFromJsonAsync<List<PersonelDetayVMSP>>(BaseRoute);
+                var response = await _httpClient.GetFromJsonAsync<List<PersonelDetayVM>>(BaseRoute);
 
-                return response ?? new List<PersonelDetayVMSP>();
+                return response ?? new List<PersonelDetayVM>();
             }
         }
     }

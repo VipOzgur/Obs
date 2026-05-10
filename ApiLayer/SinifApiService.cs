@@ -22,21 +22,21 @@ namespace ApiLayer
             }
 
             // GET: Tüm sınıfları listeler
-            public async Task<List<SinifSP>> GetAllAsync()
+            public async Task<List<Siniflar>> GetAllAsync()
             {
-                var response = await _httpClient.GetFromJsonAsync<List<SinifSP>>(BaseRoute);
-                return response ?? new List<SinifSP>();
+                var response = await _httpClient.GetFromJsonAsync<List<Siniflar>>(BaseRoute);
+                return response ?? new List<Siniflar>();
             }
 
             // POST: Yeni bir sınıf ekler
-            public async Task<string> AddAsync(SinifSP sinif)
+            public async Task<string> AddAsync(Siniflar sinif)
             {
                 var response = await _httpClient.PostAsJsonAsync(BaseRoute, sinif);
                 return await response.Content.ReadAsStringAsync(); // "Eklendi" döner
             }
 
             // PUT: Mevcut sınıf bilgilerini günceller
-            public async Task<string> UpdateAsync(SinifSP sinif)
+            public async Task<string> UpdateAsync(Siniflar sinif)
             {
                 var response = await _httpClient.PostAsJsonAsync(BaseRoute, sinif);
                 return await response.Content.ReadAsStringAsync(); // "Güncellendi" döner

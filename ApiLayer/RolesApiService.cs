@@ -19,14 +19,14 @@ namespace ApiLayer
             }
 
             // GET: Tüm rolleri listeler
-            public async Task<List<RolesSP>> GetAllAsync()
+            public async Task<List<Roles>> GetAllAsync()
             {
-                var response = await _httpClient.GetFromJsonAsync<List<RolesSP>>(BaseRoute);
-                return response ?? new List<RolesSP>();
+                var response = await _httpClient.GetFromJsonAsync<List<Roles>>(BaseRoute);
+                return response ?? new List<Roles>();
             }
 
             // POST: Yeni rol ekler
-            public async Task<string> AddAsync(RolesSP role)
+            public async Task<string> AddAsync(Roles role)
             {
                 var response = await _httpClient.PostAsJsonAsync(BaseRoute, role);
                 return await response.Content.ReadAsStringAsync(); // "Eklendi"
@@ -34,7 +34,7 @@ namespace ApiLayer
 
             // PUT: Rol günceller 
             // Not: Controller tarafında "Güncelleme yok" mesajı döndüğü için bu metod o mesajı iletir.
-            public async Task<string> UpdateAsync(RolesSP role)
+            public async Task<string> UpdateAsync(Roles role)
             {
                 var response = await _httpClient.PutAsJsonAsync(BaseRoute, role);
                 return await response.Content.ReadAsStringAsync(); // "Rolede Güncelleme yok"

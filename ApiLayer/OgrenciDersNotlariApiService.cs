@@ -22,7 +22,7 @@ namespace ApiLayer
         /// Öğrencinin ders notlarını getirir. 
         /// ogrenciId null gönderilirse tüm notlar gelebilir (API logic'ine bağlı).
         /// </summary>
-        public async Task<List<OgrenciDersNotlariVMSP>> GetNotlarAsync(int? ogrenciId)
+        public async Task<List<OgrenciDersNotlariVM>> GetNotlarAsync(int? ogrenciId)
         {
             // Endpoint yapısı: api/OgrenciDersNotlari/notlar?ogrenciId=5
             string url = $"{BaseRoute}/notlar";
@@ -32,8 +32,8 @@ namespace ApiLayer
                 url += $"?ogrenciId={ogrenciId.Value}";
             }
 
-            var response = await _httpClient.GetFromJsonAsync<List<OgrenciDersNotlariVMSP>>(url);
-            return response ?? new List<OgrenciDersNotlariVMSP>();
+            var response = await _httpClient.GetFromJsonAsync<List<OgrenciDersNotlariVM>>(url);
+            return response ?? new List<OgrenciDersNotlariVM>();
         }
     }
 

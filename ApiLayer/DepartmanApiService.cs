@@ -19,21 +19,21 @@ namespace ApiLayer
         }
 
         // GET: Tüm listeyi getirir
-        public async Task<List<DepartmansSP>> GetAllAsync()
+        public async Task<List<Departmans>> GetAllAsync()
         {
-            return await _httpClient.GetFromJsonAsync<List<DepartmansSP>>(BaseRoute)
-                   ?? new List<DepartmansSP>();
+            return await _httpClient.GetFromJsonAsync<List<Departmans>>(BaseRoute)
+                   ?? new List<Departmans>();
         }
 
         // POST: Yeni departman ekler
-        public async Task<string> AddAsync(DepartmansSP departman)
+        public async Task<string> AddAsync(Departmans departman)
         {
             var response = await _httpClient.PostAsJsonAsync(BaseRoute, departman);
             return await response.Content.ReadAsStringAsync(); // "Eklendi" döner
         }
 
         // PUT: Departman günceller
-        public async Task<string> UpdateAsync(DepartmansSP departman)
+        public async Task<string> UpdateAsync(Departmans departman)
         {
             var response = await _httpClient.PutAsJsonAsync(BaseRoute, departman);
             return await response.Content.ReadAsStringAsync(); // "Güncellendi" döner
