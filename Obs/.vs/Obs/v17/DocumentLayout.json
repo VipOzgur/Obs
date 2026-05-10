@@ -3,19 +3,16 @@
   "WorkspaceRootPath": "D:\\etc\\obss\\Obs\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{70CF4A83-90ED-4F43-BD2E-0A498383016E}|..\\ObsApi\\ObsApi.csproj|d:\\etc\\obss\\obsapi\\controllers\\logscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{14861B91-AB18-44A4-9EB4-993C3F5A838E}|..\\ApiLayer\\ApiLayer.csproj|d:\\etc\\obss\\apilayer\\rolesapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA838305-0DBE-4764-AB3D-F2285961A8AA}|..\\isKatmani\\isKatmani.csproj|d:\\etc\\obss\\iskatmani\\logsp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{14861B91-AB18-44A4-9EB4-993C3F5A838E}|..\\ApiLayer\\ApiLayer.csproj|d:\\etc\\obss\\apilayer\\sinifapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA838305-0DBE-4764-AB3D-F2285961A8AA}|..\\isKatmani\\isKatmani.csproj|d:\\etc\\obss\\iskatmani\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{70CF4A83-90ED-4F43-BD2E-0A498383016E}|..\\ObsApi\\ObsApi.csproj|d:\\etc\\obss\\obsapi\\controllers\\siniflarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70CF4A83-90ED-4F43-BD2E-0A498383016E}|..\\ObsApi\\ObsApi.csproj|d:\\etc\\obss\\obsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70CF4A83-90ED-4F43-BD2E-0A498383016E}|..\\ObsApi\\ObsApi.csproj|d:\\etc\\obss\\obsapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{70CF4A83-90ED-4F43-BD2E-0A498383016E}|..\\ObsApi\\ObsApi.csproj|d:\\etc\\obss\\obsapi\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,66 +39,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "LogSP.cs",
-              "DocumentMoniker": "D:\\etc\\obss\\isKatmani\\LogSP.cs",
-              "RelativeDocumentMoniker": "..\\isKatmani\\LogSP.cs",
-              "ToolTip": "D:\\etc\\obss\\isKatmani\\LogSP.cs",
-              "RelativeToolTip": "..\\isKatmani\\LogSP.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "SinifApiService.cs",
+              "DocumentMoniker": "D:\\etc\\obss\\ApiLayer\\SinifApiService.cs",
+              "RelativeDocumentMoniker": "..\\ApiLayer\\SinifApiService.cs",
+              "ToolTip": "D:\\etc\\obss\\ApiLayer\\SinifApiService.cs",
+              "RelativeToolTip": "..\\ApiLayer\\SinifApiService.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAUwB4AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T21:12:57.002Z",
+              "WhenOpened": "2026-05-10T00:27:53.088Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Log.cs",
-              "DocumentMoniker": "D:\\etc\\obss\\isKatmani\\Log.cs",
-              "RelativeDocumentMoniker": "..\\isKatmani\\Log.cs",
-              "ToolTip": "D:\\etc\\obss\\isKatmani\\Log.cs",
-              "RelativeToolTip": "..\\isKatmani\\Log.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "SiniflarController.cs",
+              "DocumentMoniker": "D:\\etc\\obss\\ObsApi\\Controllers\\SiniflarController.cs",
+              "RelativeDocumentMoniker": "..\\ObsApi\\Controllers\\SiniflarController.cs",
+              "ToolTip": "D:\\etc\\obss\\ObsApi\\Controllers\\SiniflarController.cs",
+              "RelativeToolTip": "..\\ObsApi\\Controllers\\SiniflarController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T21:12:51.821Z",
+              "WhenOpened": "2026-05-10T00:24:00.461Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "LogsController.cs",
-              "DocumentMoniker": "D:\\etc\\obss\\ObsApi\\Controllers\\LogsController.cs",
-              "RelativeDocumentMoniker": "..\\ObsApi\\Controllers\\LogsController.cs",
-              "ToolTip": "D:\\etc\\obss\\ObsApi\\Controllers\\LogsController.cs",
-              "RelativeToolTip": "..\\ObsApi\\Controllers\\LogsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAARAAAAAAAAAA==",
+              "Title": "RolesApiService.cs",
+              "DocumentMoniker": "D:\\etc\\obss\\ApiLayer\\RolesApiService.cs",
+              "RelativeDocumentMoniker": "..\\ApiLayer\\RolesApiService.cs",
+              "ToolTip": "D:\\etc\\obss\\ApiLayer\\RolesApiService.cs",
+              "RelativeToolTip": "..\\ApiLayer\\RolesApiService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T21:12:35.209Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "WeatherForecast.cs",
-              "DocumentMoniker": "D:\\etc\\obss\\ObsApi\\WeatherForecast.cs",
-              "RelativeDocumentMoniker": "..\\ObsApi\\WeatherForecast.cs",
-              "ToolTip": "D:\\etc\\obss\\ObsApi\\WeatherForecast.cs",
-              "RelativeToolTip": "..\\ObsApi\\WeatherForecast.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T21:09:02.045Z",
+              "WhenOpened": "2026-05-10T00:22:20.779Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\etc\\obss\\ObsApi\\Program.cs",
-              "RelativeDocumentMoniker": "..\\ObsApi\\Program.cs",
-              "ToolTip": "D:\\etc\\obss\\ObsApi\\Program.cs",
-              "RelativeToolTip": "..\\ObsApi\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "RolesController.cs",
+              "DocumentMoniker": "D:\\etc\\obss\\ObsApi\\Controllers\\RolesController.cs",
+              "RelativeDocumentMoniker": "..\\ObsApi\\Controllers\\RolesController.cs",
+              "ToolTip": "D:\\etc\\obss\\ObsApi\\Controllers\\RolesController.cs",
+              "RelativeToolTip": "..\\ObsApi\\Controllers\\RolesController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAUwBoAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T21:08:59.542Z",
+              "WhenOpened": "2026-05-10T00:21:31.609Z",
               "EditorCaption": ""
             }
           ]
