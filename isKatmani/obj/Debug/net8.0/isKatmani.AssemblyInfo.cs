@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("isKatmani")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e2b751a37944acc610c2ea8fb0d35a25070ff9cb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b5b7d375d1f4e2e8169fa4281635596c723e206c")]
 [assembly: System.Reflection.AssemblyProductAttribute("isKatmani")]
 [assembly: System.Reflection.AssemblyTitleAttribute("isKatmani")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

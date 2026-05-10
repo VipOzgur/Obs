@@ -80,7 +80,6 @@ D:\etc\obss\ObsApi\obj\Debug\net8.0\staticwebassets\msbuild.build.ObsApi.props
 D:\etc\obss\ObsApi\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ObsApi.props
 D:\etc\obss\ObsApi\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ObsApi.props
 D:\etc\obss\ObsApi\obj\Debug\net8.0\staticwebassets.pack.json
-D:\etc\obss\ObsApi\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 D:\etc\obss\ObsApi\obj\Debug\net8.0\ObsApi.csproj.Up2Date
 D:\etc\obss\ObsApi\obj\Debug\net8.0\ObsApi.dll
 D:\etc\obss\ObsApi\obj\Debug\net8.0\refint\ObsApi.dll
