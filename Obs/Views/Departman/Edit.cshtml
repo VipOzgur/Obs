@@ -1,0 +1,36 @@
+@model Departmans
+@{
+    ViewData["Title"] = "Departman Duzenle";
+}
+
+<div class="page-heading">
+    <h1 class="h3 mb-0">Departman Duzenle</h1>
+    <a class="btn btn-outline-secondary" asp-action="Index">Listeye don</a>
+</div>
+
+<div class="surface">
+    <form asp-action="Edit" method="post" class="surface-body">
+        <input asp-for="Id" type="hidden" />
+        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+        <div class="row g-3">
+            <div class="col-md-8">
+                <label asp-for="ad" class="form-label">Departman adi</label>
+                <input asp-for="ad" class="form-control" />
+                <span asp-validation-for="ad" class="text-danger"></span>
+            </div>
+            <div class="col-md-4">
+                <label asp-for="fakulteId" class="form-label">Fakulte Id</label>
+                <input asp-for="fakulteId" class="form-control" type="number" min="1" />
+                <span asp-validation-for="fakulteId" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="mt-4 d-flex gap-2">
+            <button type="submit" class="btn btn-success">Guncelle</button>
+            <a class="btn btn-outline-secondary" asp-action="Index">Vazgec</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

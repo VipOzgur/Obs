@@ -1,42 +1,40 @@
-﻿using ApiLayer.ObsWeb.Services;
+using ApiLayer.ObsWeb.Services;
 using isKatmani;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Obs.Controllers
 {
+    [Authorize(Policy = "ManagementViewer")]
     public class PersonelDetayController : Controller
     {
-            private readonly PersonelDetayApiService _personelDetayService;
+        private readonly PersonelDetayApiService _personelDetayService;
 
-            public PersonelDetayController(PersonelDetayApiService personelDetayService)
+        public PersonelDetayController(PersonelDetayApiService personelDetayService)
+        {
+            _personelDetayService = personelDetayService;
+        }
+
+        public async Task<IActionResult> Index()
+        {
+            try
             {
-                _personelDetayService = personelDetayService;
+                var detayliListe = await _personelDetayService.GetAllPersonelDetayAsync();
+                return View(detayliListe);
             }
-
-            // GET: PersonelDetay
-            // Tüm personellerin detaylı listesini tablo olarak döndürür
-            public async Task<IActionResult> Index()
+            catch (Exception ex)
             {
-                try
-                {
-                    var detayliListe = await _personelDetayService.GetAllPersonelDetayAsync();
-                    return View(detayliListe);
-                }
-                catch (Exception ex)
-                {
-                    // Hata durumunda boş liste gönderip kullanıcıya bilgi verebilirsiniz
-                    ViewBag.Error = "Veriler yüklenirken bir hata oluştu: " + ex.Message;
-                    return View(new List<PersonelDetayVM>());
-                }
-            }
-
-            // İsterseniz belirli bir departmana göre filtreleme yapan bir Action da ekleyebilirsiniz
-            public async Task<IActionResult> Filtrele(string departmanAdi)
-            {
-                var liste = await _personelDetayService.GetAllPersonelDetayAsync();
-                var filtrelenmiş = liste.Where(p => p.DepartmanAd == departmanAdi).ToList();
-
-                return View("Index", filtrelenmiş);
+                ViewBag.Error = "Veriler yuklenirken bir hata olustu: " + ex.Message;
+                return View(new List<PersonelDetayVM>());
             }
         }
+
+        public async Task<IActionResult> Filtrele(string departmanAdi)
+        {
+            var liste = await _personelDetayService.GetAllPersonelDetayAsync();
+            var filtrelenmis = liste.Where(p => p.DepartmanAd == departmanAdi).ToList();
+
+            return View("Index", filtrelenmis);
+        }
     }
+}

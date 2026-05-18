@@ -1,8 +1,64 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+@{
+    ViewData["Title"] = "Yonetim Paneli";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="page-heading">
+    <div>
+        <h1 class="h3 mb-1">Yonetim Paneli</h1>
+        <p class="text-muted mb-0">OBS icindeki temel kayit ekranlarina hizli erisim.</p>
+    </div>
 </div>
+
+<div class="row g-3">
+    <div class="col-md-6 col-xl-3">
+        <a class="surface d-block text-decoration-none text-dark h-100" asp-controller="DersSecim" asp-action="Index">
+            <div class="surface-body">
+                <div class="text-muted small">Dersler</div>
+                <div class="h5 mb-0">Ders Secimleri</div>
+            </div>
+        </a>
+    </div>
+    @if (User.IsInRole("Admin") || User.IsInRole("SuperAdmin"))
+    {
+        <div class="col-md-6 col-xl-3">
+            <a class="surface d-block text-decoration-none text-dark h-100" asp-controller="Personel" asp-action="Index">
+                <div class="surface-body">
+                    <div class="text-muted small">Akademik ekip</div>
+                    <div class="h5 mb-0">Personel</div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-xl-3">
+            <a class="surface d-block text-decoration-none text-dark h-100" asp-controller="Dersler" asp-action="Index">
+                <div class="surface-body">
+                    <div class="text-muted small">Akademik katalog</div>
+                    <div class="h5 mb-0">Dersler</div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-xl-3">
+            <a class="surface d-block text-decoration-none text-dark h-100" asp-controller="DepartmanIstatistik" asp-action="Index">
+                <div class="surface-body">
+                    <div class="text-muted small">Ozet</div>
+                    <div class="h5 mb-0">Istatistikler</div>
+                </div>
+            </a>
+        </div>
+    }
+</div>
+
+@if (User.IsInRole("SuperAdmin"))
+{
+    <div class="surface mt-4">
+        <div class="surface-header">
+            <h2 class="h5 mb-0">Sik kullanilan islemler</h2>
+        </div>
+        <div class="surface-body d-flex flex-wrap gap-2">
+            <a class="btn btn-success" asp-controller="Ogrenci" asp-action="Create">Yeni ogrenci</a>
+            <a class="btn btn-outline-success" asp-controller="Personel" asp-action="Create">Yeni personel</a>
+            <a class="btn btn-outline-success" asp-controller="Dersler" asp-action="Create">Yeni ders</a>
+            <a class="btn btn-outline-secondary" asp-controller="Fakulte" asp-action="Create">Yeni fakulte</a>
+            <a class="btn btn-outline-secondary" asp-controller="Sinif" asp-action="Create">Yeni sinif</a>
+        </div>
+    </div>
+}

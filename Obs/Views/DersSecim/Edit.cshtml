@@ -1,0 +1,69 @@
+@model DersSecimFormViewModel
+@{
+    ViewData["Title"] = "Ders Secimi Duzenle";
+}
+
+<div class="page-heading">
+    <h1 class="h3 mb-0">Ders Secimi Duzenle</h1>
+    <a class="btn btn-outline-secondary" asp-action="Index" asp-route-ogrenciId="@Model.OgrenciId">Listeye don</a>
+</div>
+
+<div class="surface">
+    <form asp-action="Edit" method="post" class="surface-body">
+        <input asp-for="Id" type="hidden" />
+        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label asp-for="OgrenciId" class="form-label"></label>
+                <select asp-for="OgrenciId" class="form-select">
+                    @foreach (var ogrenci in Model.Ogrenciler)
+                    {
+                        <option value="@ogrenci.Id">@ogrenci.ad @ogrenci.soyad (#@ogrenci.Id)</option>
+                    }
+                </select>
+                <span asp-validation-for="OgrenciId" class="text-danger"></span>
+            </div>
+
+            <div class="col-md-6">
+                <label asp-for="DersId" class="form-label"></label>
+                <select asp-for="DersId" class="form-select">
+                    @foreach (var ders in Model.Dersler)
+                    {
+                        <option value="@ders.Id">@ders.ad - Donem @ders.donem (@ders.akts AKTS)</option>
+                    }
+                </select>
+                <span asp-validation-for="DersId" class="text-danger"></span>
+            </div>
+
+            <div class="col-md-4">
+                <label asp-for="Puan" class="form-label"></label>
+                <input asp-for="Puan" class="form-control" type="number" min="0" max="100" />
+                <span asp-validation-for="Puan" class="text-danger"></span>
+            </div>
+            <div class="col-md-4">
+                <label asp-for="OnayDurumu" class="form-label"></label>
+                <select asp-for="OnayDurumu" class="form-select">
+                    <option value="Beklemede">Beklemede</option>
+                    <option value="Onaylandi">Onaylandi</option>
+                    <option value="Reddedildi">Reddedildi</option>
+                </select>
+            </div>
+            <div class="col-md-4 d-flex align-items-end">
+                <div class="form-check">
+                    <input asp-for="Basari" class="form-check-input" />
+                    <label asp-for="Basari" class="form-check-label">Basarili</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-4 d-flex gap-2">
+            <button type="submit" class="btn btn-success">Guncelle</button>
+            <a class="btn btn-outline-secondary" asp-action="Index" asp-route-ogrenciId="@Model.OgrenciId">Vazgec</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

@@ -1,0 +1,126 @@
+@model DersSecimViewModel
+@{
+    ViewData["Title"] = "Ders Secimleri";
+    var canManage = User.IsInRole("Admin") || User.IsInRole("SuperAdmin");
+}
+
+<div class="page-heading">
+    <div>
+        <h1 class="h3 mb-1">Ders Secimleri</h1>
+        <p class="text-muted mb-0">@(canManage ? "Ogrenci ders secimlerini inceleyin ve onaylayin." : "Ders secimlerinizi buradan yonetin.")</p>
+    </div>
+    <a class="btn btn-success" asp-action="Create" asp-route-ogrenciId="@Model.OgrenciId">Ders sec</a>
+</div>
+
+@if (TempData["Mesaj"] != null)
+{
+    <div class="alert alert-info">@TempData["Mesaj"]</div>
+}
+
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">@ViewBag.Error</div>
+}
+
+@if (canManage)
+{
+    <div class="surface mb-3">
+        <form asp-action="Index" method="get" class="surface-body">
+            <div class="row g-2 align-items-end">
+                <div class="col-md-8">
+                    <label class="form-label">Ogrenciye gore filtrele</label>
+                    <select class="form-select" name="ogrenciId">
+                        <option value="">Tum ogrenciler</option>
+                        @foreach (var ogrenci in Model.Ogrenciler)
+                        {
+                            <option value="@ogrenci.Id" selected="@(Model.OgrenciId == ogrenci.Id)">
+                                @ogrenci.ad @ogrenci.soyad (#@ogrenci.Id)
+                            </option>
+                        }
+                    </select>
+                </div>
+                <div class="col-md-4 d-flex gap-2">
+                    <button type="submit" class="btn btn-success">Filtrele</button>
+                    <a class="btn btn-outline-secondary" asp-action="Index">Temizle</a>
+                </div>
+            </div>
+        </form>
+    </div>
+}
+
+<div class="surface">
+    <div class="table-responsive">
+        <table class="table align-middle mb-0">
+            <thead>
+                <tr>
+                    <th>Ogrenci</th>
+                    <th>Ders</th>
+                    <th>Donem</th>
+                    <th>AKTS</th>
+                    <th>Puan</th>
+                    <th>Basari</th>
+                    <th>Onay</th>
+                    <th class="text-end">Islemler</th>
+                </tr>
+            </thead>
+            <tbody>
+            @if (Model.Secimler.Any())
+            {
+                foreach (var secim in Model.Secimler)
+                {
+                    var ders = Model.Dersler.FirstOrDefault(item => item.Id == secim.dersId);
+                    var ogrenci = Model.Ogrenciler.FirstOrDefault(item => item.Id == secim.ogrId);
+                    var onayClass = secim.onayDurumu switch
+                    {
+                        "Onaylandi" => "text-bg-success",
+                        "Reddedildi" => "text-bg-danger",
+                        _ => "text-bg-warning"
+                    };
+
+                    <tr>
+                        <td>
+                            @if (canManage)
+                            {
+                                <div class="fw-semibold">@(ogrenci == null ? $"Ogrenci #{secim.ogrId}" : $"{ogrenci.ad} {ogrenci.soyad}")</div>
+                                <div class="text-muted small">Id: @secim.ogrId</div>
+                            }
+                            else
+                            {
+                                <span>Benim secimim</span>
+                            }
+                        </td>
+                        <td class="fw-semibold">@(ders?.ad ?? $"Ders #{secim.dersId}")</td>
+                        <td>@(ders?.donem.ToString() ?? "-")</td>
+                        <td>@(ders?.akts.ToString() ?? "-")</td>
+                        <td>@secim.puan</td>
+                        <td>@(secim.basari ? "Basarili" : "-")</td>
+                        <td><span class="badge @onayClass">@secim.onayDurumu</span></td>
+                        <td class="text-end">
+                            @if (canManage)
+                            {
+                                <form asp-action="Approve" method="post" class="d-inline">
+                                    <input type="hidden" name="id" value="@secim.Id" />
+                                    <button class="btn btn-sm btn-outline-success" type="submit">Onayla</button>
+                                </form>
+                                <form asp-action="Reject" method="post" class="d-inline">
+                                    <input type="hidden" name="id" value="@secim.Id" />
+                                    <button class="btn btn-sm btn-outline-warning" type="submit">Reddet</button>
+                                </form>
+                                <a class="btn btn-sm btn-outline-primary" asp-action="Edit" asp-route-id="@secim.Id">Duzenle</a>
+                                <form asp-action="Delete" method="post" class="d-inline" onsubmit="return confirm('Bu ders secimi silinsin mi?');">
+                                    <input type="hidden" name="id" value="@secim.Id" />
+                                    <button class="btn btn-sm btn-outline-danger" type="submit">Sil</button>
+                                </form>
+                            }
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr><td colspan="8"><div class="empty-state">Ders secimi bulunamadi.</div></td></tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>

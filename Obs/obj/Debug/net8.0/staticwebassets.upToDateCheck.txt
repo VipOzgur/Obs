@@ -1,5 +1,16 @@
+wwwroot\css\adminlte.min.css
+wwwroot\css\adminlte.min.css.map
+wwwroot\css\all.min.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\images\default.png
+wwwroot\js\adminlte.js
+wwwroot\js\adminlte.js.map
+wwwroot\js\adminlte.min.js
+wwwroot\js\adminlte.min.js.map
+wwwroot\js\Chart.min.js
+wwwroot\js\dashboard3.js
+wwwroot\js\demo.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

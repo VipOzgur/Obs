@@ -1,0 +1,24 @@
+@model DersFormViewModel
+@{
+    ViewData["Title"] = "Yeni Ders";
+}
+
+<div class="page-heading">
+    <h1 class="h3 mb-0">Yeni Ders</h1>
+    <a class="btn btn-outline-secondary" asp-action="Index">Listeye don</a>
+</div>
+
+<div class="surface">
+    <form asp-action="Create" method="post" class="surface-body">
+        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+        <partial name="_DersForm" model="Model" />
+        <div class="mt-4 d-flex gap-2">
+            <button type="submit" class="btn btn-success">Kaydet</button>
+            <a class="btn btn-outline-secondary" asp-action="Index">Vazgec</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

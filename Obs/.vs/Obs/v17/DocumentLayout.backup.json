@@ -3,19 +3,30 @@
   "WorkspaceRootPath": "D:\\etc\\obss\\Obs\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{70CF4A83-90ED-4F43-BD2E-0A498383016E}|..\\ObsApi\\ObsApi.csproj|d:\\etc\\obss\\obsapi\\controllers\\logscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A0E47E03-898C-4210-9296-A2F9034A2786}|Obs.csproj|d:\\etc\\obss\\obs\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A0E47E03-898C-4210-9296-A2F9034A2786}|Obs.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA838305-0DBE-4764-AB3D-F2285961A8AA}|..\\isKatmani\\isKatmani.csproj|d:\\etc\\obss\\iskatmani\\logsp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA838305-0DBE-4764-AB3D-F2285961A8AA}|..\\isKatmani\\isKatmani.csproj|d:\\etc\\obss\\iskatmani\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{70CF4A83-90ED-4F43-BD2E-0A498383016E}|..\\ObsApi\\ObsApi.csproj|d:\\etc\\obss\\obsapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{70CF4A83-90ED-4F43-BD2E-0A498383016E}|..\\ObsApi\\ObsApi.csproj|d:\\etc\\obss\\obsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70CF4A83-90ED-4F43-BD2E-0A498383016E}|..\\ObsApi\\ObsApi.csproj|d:\\etc\\obss\\obsapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{70CF4A83-90ED-4F43-BD2E-0A498383016E}|..\\ObsApi\\ObsApi.csproj|d:\\etc\\obss\\obsapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0E47E03-898C-4210-9296-A2F9034A2786}|Obs.csproj|d:\\etc\\obss\\obs\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0E47E03-898C-4210-9296-A2F9034A2786}|Obs.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA838305-0DBE-4764-AB3D-F2285961A8AA}|..\\isKatmani\\isKatmani.csproj|d:\\etc\\obss\\iskatmani\\derslersp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14861B91-AB18-44A4-9EB4-993C3F5A838E}|..\\ApiLayer\\ApiLayer.csproj|d:\\etc\\obss\\apilayer\\derslerapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA838305-0DBE-4764-AB3D-F2285961A8AA}|..\\isKatmani\\isKatmani.csproj|d:\\etc\\obss\\iskatmani\\dersler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,7 +36,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -41,67 +52,106 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LogSP.cs",
-              "DocumentMoniker": "D:\\etc\\obss\\isKatmani\\LogSP.cs",
-              "RelativeDocumentMoniker": "..\\isKatmani\\LogSP.cs",
-              "ToolTip": "D:\\etc\\obss\\isKatmani\\LogSP.cs",
-              "RelativeToolTip": "..\\isKatmani\\LogSP.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T21:12:57.002Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Log.cs",
-              "DocumentMoniker": "D:\\etc\\obss\\isKatmani\\Log.cs",
-              "RelativeDocumentMoniker": "..\\isKatmani\\Log.cs",
-              "ToolTip": "D:\\etc\\obss\\isKatmani\\Log.cs",
-              "RelativeToolTip": "..\\isKatmani\\Log.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T21:12:51.821Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "LogsController.cs",
-              "DocumentMoniker": "D:\\etc\\obss\\ObsApi\\Controllers\\LogsController.cs",
-              "RelativeDocumentMoniker": "..\\ObsApi\\Controllers\\LogsController.cs",
-              "ToolTip": "D:\\etc\\obss\\ObsApi\\Controllers\\LogsController.cs",
-              "RelativeToolTip": "..\\ObsApi\\Controllers\\LogsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T21:12:35.209Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "WeatherForecast.cs",
-              "DocumentMoniker": "D:\\etc\\obss\\ObsApi\\WeatherForecast.cs",
-              "RelativeDocumentMoniker": "..\\ObsApi\\WeatherForecast.cs",
-              "ToolTip": "D:\\etc\\obss\\ObsApi\\WeatherForecast.cs",
-              "RelativeToolTip": "..\\ObsApi\\WeatherForecast.cs",
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\etc\\obss\\Obs\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "D:\\etc\\obss\\Obs\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T21:09:02.045Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-11T07:48:33.938Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\etc\\obss\\ObsApi\\appsettings.json",
+              "RelativeDocumentMoniker": "..\\ObsApi\\appsettings.json",
+              "ToolTip": "D:\\etc\\obss\\ObsApi\\appsettings.json",
+              "RelativeToolTip": "..\\ObsApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-11T07:31:42.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\etc\\obss\\ObsApi\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "..\\ObsApi\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\etc\\obss\\ObsApi\\Properties\\launchSettings.json",
+              "RelativeToolTip": "..\\ObsApi\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-11T07:26:53.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\etc\\obss\\ObsApi\\Program.cs",
               "RelativeDocumentMoniker": "..\\ObsApi\\Program.cs",
               "ToolTip": "D:\\etc\\obss\\ObsApi\\Program.cs",
               "RelativeToolTip": "..\\ObsApi\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T07:26:49.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\etc\\obss\\Obs\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\etc\\obss\\Obs\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T07:26:41.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DerslerSP.cs",
+              "DocumentMoniker": "D:\\etc\\obss\\isKatmani\\DerslerSP.cs",
+              "RelativeDocumentMoniker": "..\\isKatmani\\DerslerSP.cs",
+              "ToolTip": "D:\\etc\\obss\\isKatmani\\DerslerSP.cs",
+              "RelativeToolTip": "..\\isKatmani\\DerslerSP.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T07:25:52.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Dersler.cs",
+              "DocumentMoniker": "D:\\etc\\obss\\isKatmani\\Dersler.cs",
+              "RelativeDocumentMoniker": "..\\isKatmani\\Dersler.cs",
+              "ToolTip": "D:\\etc\\obss\\isKatmani\\Dersler.cs",
+              "RelativeToolTip": "..\\isKatmani\\Dersler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T21:08:59.542Z",
+              "WhenOpened": "2026-05-11T07:25:34.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DerslerApiService.cs",
+              "DocumentMoniker": "D:\\etc\\obss\\ApiLayer\\DerslerApiService.cs",
+              "RelativeDocumentMoniker": "..\\ApiLayer\\DerslerApiService.cs",
+              "ToolTip": "D:\\etc\\obss\\ApiLayer\\DerslerApiService.cs",
+              "RelativeToolTip": "..\\ApiLayer\\DerslerApiService.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T07:25:09.941Z",
               "EditorCaption": ""
             }
           ]

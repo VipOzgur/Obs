@@ -1,0 +1,41 @@
+@model DersFormViewModel
+
+<div class="row g-3">
+    <div class="col-md-6">
+        <label asp-for="Ders.ad" class="form-label">Ders adi</label>
+        <input asp-for="Ders.ad" class="form-control" />
+        <span asp-validation-for="Ders.ad" class="text-danger"></span>
+    </div>
+    <div class="col-md-3">
+        <label asp-for="Ders.akts" class="form-label">AKTS</label>
+        <input asp-for="Ders.akts" class="form-control" type="number" min="1" />
+        <span asp-validation-for="Ders.akts" class="text-danger"></span>
+    </div>
+    <div class="col-md-3">
+        <label asp-for="Ders.donem" class="form-label">Donem</label>
+        <input asp-for="Ders.donem" class="form-control" type="number" min="1" />
+        <span asp-validation-for="Ders.donem" class="text-danger"></span>
+    </div>
+    <div class="col-md-6">
+        <label asp-for="Ders.personelId" class="form-label">Ogretim uyesi</label>
+        <select asp-for="Ders.personelId" class="form-select">
+            <option value="">Personel secin</option>
+            @foreach (var personel in Model.Personeller)
+            {
+                <option value="@personel.Id">@personel.ad @personel.soyad (#@personel.Id)</option>
+            }
+        </select>
+        <span asp-validation-for="Ders.personelId" class="text-danger"></span>
+    </div>
+    <div class="col-md-6">
+        <label asp-for="Ders.sinifId" class="form-label">Sinif</label>
+        <select asp-for="Ders.sinifId" class="form-select">
+            <option value="">Sinif secin</option>
+            @foreach (var sinif in Model.Siniflar)
+            {
+                <option value="@sinif.Id">@sinif.ad - @sinif.no (#@sinif.Id)</option>
+            }
+        </select>
+        <span asp-validation-for="Ders.sinifId" class="text-danger"></span>
+    </div>
+</div>

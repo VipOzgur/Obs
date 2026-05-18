@@ -1,11 +1,12 @@
-﻿using ApiLayer;
+using ApiLayer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Obs.Controllers
 {
+    [Authorize(Policy = "ManagementViewer")]
     public class DepartmanIstatistikController : Controller
     {
-
         private readonly DepartmanIstatistikApiService _istatistikService;
 
         public DepartmanIstatistikController(DepartmanIstatistikApiService istatistikService)
@@ -13,17 +14,12 @@ namespace Obs.Controllers
             _istatistikService = istatistikService;
         }
 
-        // GET: Departman Istatistiklerini listeler
         public async Task<IActionResult> Index()
         {
-            // Servis üzerinden API'ye istek atılıyor
             var istatistikler = await _istatistikService.GetDepartmanIstatistikleriAsync();
-
-            // Veri gelmediyse kullanıcıya boş liste gönderilir
             return View(istatistikler);
         }
 
-        // Dashboard gibi bir sayfada kısmi (partial) görünüm olarak kullanmak isterseniz:
         public async Task<IActionResult> GetStatsWidget()
         {
             var data = await _istatistikService.GetDepartmanIstatistikleriAsync();

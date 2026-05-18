@@ -1,0 +1,28 @@
+@model IEnumerable<DepartmanIstatistikVM>
+
+<div class="row g-3">
+    <div class="col-md-4">
+        <div class="surface h-100">
+            <div class="surface-body">
+                <div class="text-muted small">Departman</div>
+                <div class="h4 mb-0">@(Model?.Count() ?? 0)</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="surface h-100">
+            <div class="surface-body">
+                <div class="text-muted small">Personel</div>
+                <div class="h4 mb-0">@(Model?.Sum(x => x.PersonelSayisi) ?? 0)</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="surface h-100">
+            <div class="surface-body">
+                <div class="text-muted small">AKTS</div>
+                <div class="h4 mb-0">@(Model?.Sum(x => x.ToplamAkts) ?? 0)</div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,5 +1,7 @@
 html {
   font-size: 14px;
+  position: relative;
+  min-height: 100%;
 }
 
 @media (min-width: 768px) {
@@ -8,15 +10,85 @@ html {
   }
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+body {
+  min-height: 100vh;
+  background: #f6f7fb;
+  color: #172033;
 }
 
-body {
-  margin-bottom: 60px;
+.app-shell .navbar-brand {
+  color: #0f5132;
+}
+
+.app-shell .nav-link {
+  border-radius: .5rem;
+  color: #344054;
+}
+
+.app-shell .nav-link:hover,
+.app-shell .nav-link:focus {
+  background: #eef6f1;
+  color: #0f5132;
+}
+
+.page-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.surface {
+  background: #fff;
+  border: 1px solid #e6e8ef;
+  border-radius: .75rem;
+  box-shadow: 0 8px 24px rgba(16, 24, 40, .05);
+}
+
+.surface-header {
+  border-bottom: 1px solid #edf0f5;
+  padding: 1rem 1.25rem;
+}
+
+.surface-body {
+  padding: 1.25rem;
+}
+
+.table thead th {
+  color: #667085;
+  font-size: .78rem;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  background: #f8fafc;
+}
+
+.empty-state {
+  border: 1px dashed #cbd5e1;
+  border-radius: .75rem;
+  padding: 2rem;
+  text-align: center;
+  background: #fff;
+}
+
+.auth-page {
+  min-height: calc(100vh - 170px);
+  display: grid;
+  place-items: center;
+}
+
+.auth-panel {
+  width: min(100%, 440px);
+}
+
+.validation-summary-valid {
+  display: none;
 }

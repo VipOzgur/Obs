@@ -1,0 +1,60 @@
+@model Ogrenci
+@{
+    ViewData["Title"] = "Yeni Ogrenci";
+}
+
+<div class="page-heading">
+    <h1 class="h3 mb-0">Yeni Ogrenci</h1>
+    <a class="btn btn-outline-secondary" asp-action="Index">Listeye don</a>
+</div>
+
+<div class="surface">
+    <form asp-action="Create" method="post" class="surface-body">
+        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label asp-for="ad" class="form-label">Ad</label>
+                <input asp-for="ad" class="form-control" />
+                <span asp-validation-for="ad" class="text-danger"></span>
+            </div>
+            <div class="col-md-6">
+                <label asp-for="soyad" class="form-label">Soyad</label>
+                <input asp-for="soyad" class="form-control" />
+                <span asp-validation-for="soyad" class="text-danger"></span>
+            </div>
+            <div class="col-md-4">
+                <label asp-for="roleId" class="form-label">Role Id</label>
+                <input asp-for="roleId" class="form-control" type="number" min="1" />
+                <span asp-validation-for="roleId" class="text-danger"></span>
+            </div>
+            <div class="col-md-4">
+                <label asp-for="kayitTarihi" class="form-label">Kayit tarihi</label>
+                <input asp-for="kayitTarihi" class="form-control" type="date" />
+                <span asp-validation-for="kayitTarihi" class="text-danger"></span>
+            </div>
+            <div class="col-md-4">
+                <label asp-for="mezunTarihi" class="form-label">Mezuniyet tarihi</label>
+                <input asp-for="mezunTarihi" class="form-control" type="date" />
+                <span asp-validation-for="mezunTarihi" class="text-danger"></span>
+            </div>
+            <div class="col-md-6">
+                <label asp-for="sifre" class="form-label">Sifre</label>
+                <input asp-for="sifre" class="form-control" type="password" />
+                <span asp-validation-for="sifre" class="text-danger"></span>
+            </div>
+            <div class="col-12">
+                <label asp-for="adres" class="form-label">Adres</label>
+                <textarea asp-for="adres" class="form-control" rows="3"></textarea>
+                <span asp-validation-for="adres" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="mt-4 d-flex gap-2">
+            <button type="submit" class="btn btn-success">Kaydet</button>
+            <a class="btn btn-outline-secondary" asp-action="Index">Vazgec</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

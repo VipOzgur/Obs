@@ -1,0 +1,45 @@
+@model LoginViewModel
+@{
+    ViewData["Title"] = "Giris";
+}
+
+<div class="auth-page">
+    <div class="auth-panel surface">
+        <div class="surface-body">
+            <div class="mb-4">
+                <div class="text-muted small text-uppercase">OBS</div>
+                <h1 class="h3 mb-2">Giris yap</h1>
+                <p class="text-muted mb-0">Ogrenci hesabinizla devam edin.</p>
+            </div>
+
+            <form asp-action="Login" method="post">
+                <input asp-for="ReturnUrl" type="hidden" />
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+                <div class="mb-3">
+                    <label asp-for="UserName" class="form-label"></label>
+                    <input asp-for="UserName" class="form-control form-control-lg" autocomplete="username" autofocus />
+                    <div class="form-text">Ad, ad soyad veya ogrenci Id kullanabilirsiniz.</div>
+                    <span asp-validation-for="UserName" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Password" class="form-label"></label>
+                    <input asp-for="Password" class="form-control form-control-lg" autocomplete="current-password" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+
+                <div class="form-check mb-4">
+                    <input asp-for="RememberMe" class="form-check-input" />
+                    <label asp-for="RememberMe" class="form-check-label"></label>
+                </div>
+
+                <button type="submit" class="btn btn-success btn-lg w-100">Giris yap</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

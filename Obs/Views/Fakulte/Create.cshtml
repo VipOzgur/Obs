@@ -1,0 +1,40 @@
+@model Fakulteler
+@{
+    ViewData["Title"] = "Yeni Fakulte";
+}
+
+<div class="page-heading">
+    <h1 class="h3 mb-0">Yeni Fakulte</h1>
+    <a class="btn btn-outline-secondary" asp-action="Index">Listeye don</a>
+</div>
+
+<div class="surface">
+    <form asp-action="Create" method="post" class="surface-body">
+        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label asp-for="ad" class="form-label">Fakulte adi</label>
+                <input asp-for="ad" class="form-control" />
+                <span asp-validation-for="ad" class="text-danger"></span>
+            </div>
+            <div class="col-md-6">
+                <label asp-for="kurulusTarihi" class="form-label">Kurulus tarihi</label>
+                <input asp-for="kurulusTarihi" class="form-control" type="date" />
+                <span asp-validation-for="kurulusTarihi" class="text-danger"></span>
+            </div>
+            <div class="col-12">
+                <label asp-for="adres" class="form-label">Adres</label>
+                <textarea asp-for="adres" class="form-control" rows="3"></textarea>
+                <span asp-validation-for="adres" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="mt-4 d-flex gap-2">
+            <button type="submit" class="btn btn-success">Kaydet</button>
+            <a class="btn btn-outline-secondary" asp-action="Index">Vazgec</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

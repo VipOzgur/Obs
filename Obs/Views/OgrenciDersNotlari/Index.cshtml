@@ -1,0 +1,74 @@
+@model IEnumerable<OgrenciDersNotlariVM>
+@{
+    ViewData["Title"] = "Ogrenci Ders Notlari";
+    var ogrenciId = ViewBag.OgrenciId as int?;
+}
+
+<div class="page-heading">
+    <div>
+        <h1 class="h3 mb-1">Ogrenci Ders Notlari</h1>
+        <p class="text-muted mb-0">@(ogrenciId.HasValue ? $"Ogrenci Id: {ogrenciId}" : "Tum ogrenci not kayitlari")</p>
+    </div>
+    @if (ViewBag.CanFilterGrades == true)
+    {
+        <form asp-action="Index" method="get" class="d-flex gap-2">
+            <input class="form-control" type="number" name="ogrenciId" value="@ogrenciId" min="1" placeholder="Ogrenci Id" />
+            <button class="btn btn-success" type="submit">Filtrele</button>
+            <a class="btn btn-outline-secondary" asp-action="Index">Temizle</a>
+        </form>
+    }
+</div>
+
+@if (TempData["Hata"] != null)
+{
+    <div class="alert alert-warning">@TempData["Hata"]</div>
+}
+
+<div class="surface">
+    <div class="table-responsive">
+        <table class="table align-middle mb-0">
+            <thead>
+                <tr>
+                    <th>Ogrenci</th>
+                    <th>Ders</th>
+                    <th>Donem</th>
+                    <th>AKTS</th>
+                    <th>Puan</th>
+                    <th>Harf</th>
+                    <th>Durum</th>
+                    <th>Ogretim uyesi</th>
+                </tr>
+            </thead>
+            <tbody>
+            @if (Model?.Any() == true)
+            {
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            <div class="fw-semibold">@item.OgrenciAd @item.OgrenciSoyad</div>
+                            <div class="text-muted small">Id: @item.OgrenciId</div>
+                        </td>
+                        <td>
+                            <div>@item.DersAd</div>
+                            <div class="text-muted small">@item.SinifAd</div>
+                        </td>
+                        <td>@item.Donem</td>
+                        <td>@item.Akts</td>
+                        <td>@item.Puan</td>
+                        <td><span class="badge text-bg-secondary">@item.HarfNotu</span></td>
+                        <td>
+                            <span class="badge @(item.Basari ? "text-bg-success" : "text-bg-danger")">@item.DurumAd</span>
+                        </td>
+                        <td>@item.OgretimUyesi</td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr><td colspan="8"><div class="empty-state">Not kaydi bulunamadi.</div></td></tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>

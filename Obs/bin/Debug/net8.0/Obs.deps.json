@@ -8,7 +8,9 @@
     ".NETCoreApp,Version=v8.0": {
       "Obs/1.0.0": {
         "dependencies": {
-          "System.Data.SqlClient": "4.9.1"
+          "ApiLayer": "1.0.0",
+          "System.Data.SqlClient": "4.9.1",
+          "isKatmani": "1.0.0"
         },
         "runtime": {
           "Obs.dll": {}
@@ -72,6 +74,28 @@
             "fileVersion": "4.900.126.11103"
           }
         }
+      },
+      "ApiLayer/1.0.0": {
+        "dependencies": {
+          "isKatmani": "1.0.0"
+        },
+        "runtime": {
+          "ApiLayer.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "isKatmani/1.0.0": {
+        "dependencies": {
+          "System.Data.SqlClient": "4.9.1"
+        },
+        "runtime": {
+          "isKatmani.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -115,6 +139,16 @@
       "sha512": "sha512-A7RK9I4UaVHJ407GTfy37S4ABHt1+lZ+/uoA54zTv0XaaWgHO5BtXSMzMVqB6socIHEeeK5K1YRgaxCEfD79wQ==",
       "path": "system.data.sqlclient/4.9.1",
       "hashPath": "system.data.sqlclient.4.9.1.nupkg.sha512"
+    },
+    "ApiLayer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "isKatmani/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

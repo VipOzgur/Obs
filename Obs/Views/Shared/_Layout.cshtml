@@ -1,46 +1,73 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="tr">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Obs</title>
+    <title>@ViewData["Title"] - OBS</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Obs.styles.css" asp-append-version="true" />
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Obs</a>
+<body class="app-shell">
+    <header class="border-bottom bg-white sticky-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid px-4">
+                <a class="navbar-brand fw-semibold" asp-controller="Home" asp-action="Index">OBS</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                        aria-expanded="false" aria-label="Menuyu ac/kapat">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
+                <div class="navbar-collapse collapse">
+                    <ul class="navbar-nav me-auto gap-lg-1">
+                        <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="Index">Panel</a></li>
+                        <li class="nav-item"><a class="nav-link" asp-controller="OgrenciDersNotlari" asp-action="Index">Notlarim</a></li>
+                        <li class="nav-item"><a class="nav-link" asp-controller="DersSecim" asp-action="Index">Ders Secimleri</a></li>
+                        @if (User.IsInRole("Admin") || User.IsInRole("SuperAdmin"))
+                        {
+                            <li class="nav-item"><a class="nav-link" asp-controller="Fakulte" asp-action="Index">Fakulteler</a></li>
+                            <li class="nav-item"><a class="nav-link" asp-controller="Departman" asp-action="Index">Departmanlar</a></li>
+                            <li class="nav-item"><a class="nav-link" asp-controller="Sinif" asp-action="Index">Siniflar</a></li>
+                            <li class="nav-item"><a class="nav-link" asp-controller="Dersler" asp-action="Index">Dersler</a></li>
+                            <li class="nav-item"><a class="nav-link" asp-controller="Ogrenci" asp-action="Index">Ogrenciler</a></li>
+                            <li class="nav-item"><a class="nav-link" asp-controller="Personel" asp-action="Index">Personel</a></li>
+                            <li class="nav-item"><a class="nav-link" asp-controller="DepartmanIstatistik" asp-action="Index">Istatistik</a></li>
+                        }
+                        @if (User.IsInRole("SuperAdmin"))
+                        {
+                            <li class="nav-item"><a class="nav-link" asp-controller="Roles" asp-action="Index">Roller</a></li>
+                        }
                     </ul>
+                    <div class="d-flex align-items-center gap-2">
+                        @if (User.Identity?.IsAuthenticated == true)
+                        {
+                            <span class="text-muted small d-none d-md-inline">@User.Identity.Name</span>
+                            <form asp-controller="Auth" asp-action="Logout" method="post" class="m-0">
+                                <button class="btn btn-outline-danger btn-sm" type="submit">Cikis</button>
+                            </form>
+                        }
+                        else
+                        {
+                            <a class="btn btn-success btn-sm" asp-controller="Auth" asp-action="Login">Giris</a>
+                        }
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container">
+
+    <div class="container-fluid px-4 py-4">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2026 - Obs - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer class="border-top text-muted py-3 bg-white">
+        <div class="container-fluid px-4 d-flex justify-content-between flex-wrap gap-2">
+            <span>&copy; 2026 - OBS</span>
+            <a asp-controller="Home" asp-action="Privacy">Gizlilik</a>
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
